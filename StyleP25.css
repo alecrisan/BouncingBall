@@ -1,0 +1,21 @@
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;    
+  background-color: #6a5acd;
+  position: relative;
+  top: 0px;
+  left: 650px;
+}
+
+.ball:hover{
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+
+  from { transform: translateY(0);     }
+  to   { transform: translateY(675px); }
+}
